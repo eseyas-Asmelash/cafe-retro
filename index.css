@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poiret One", sans-serif;
+    color: white;
+    text-align: center;
+    height: 100%;
+    background: black;
+    background-size: cover;
+}
+
+#Hot
+{
+    background: url('/assets/hot.jpg') no-repeat center center fixed ;
+    width: 100%;
+}
+
+#Juicy
+{
+    background: url('/assets/juicy.jpg') no-repeat center center fixed;
+    width: 100%;
+}
+
+#Cozy
+{
+    background: url('/assets/cosy.jpg') no-repeat center center fixed;
+    width: 100;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 100%;
+    padding-top: 30px;
+}
+
+ nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+} 
+
+nav ul li {
+    margin: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+} 
+ 
+.navbar li a:hover {
+    background-color: #111;
+}
+
+.content h1 {
+    font-size: 3em;
+    color: red;
+    font-family: "Spirax", sans-serif;
+}
+
+.description, .tagline {
+    background-color: rgba(128, 0, 0, 0.8);
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    margin-top: 20px;
+    width: 50%;
+}
+
+.menu p {
+    margin: 5px 0;
+}
+
+  .row {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+  }
+  .column {
+    flex: 1;
+    margin: 10px;
+  }
