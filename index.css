@@ -1,30 +1,73 @@
-body {
-    margin: 0;
-    padding: 0;
+* {
     font-family: "Poiret One", sans-serif;
-    color: white;
-    text-align: center;
-    height: 100%;
-    background: black;
-    background-size: cover;
+    margin: 0;
 }
 
-#Hot
-{
-    background: url('/assets/hot.jpg') no-repeat center center fixed ;
-    width: 100%;
+html {
+    scroll-behavior: smooth;
+  }
+
+.section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1rem solid darkred;
+  height: 100vh;
 }
 
-#Juicy
-{
-    background: url('/assets/juicy.jpg') no-repeat center center fixed;
-    width: 100%;
+.section#hot {
+  background-image: url("assets/hot.jpg");
 }
 
-#Cozy
-{
-    background: url('/assets/cosy.jpg') no-repeat center center fixed;
-    width: 100;
+.section#juicy {
+  background-image: url("assets/juicy.jpg");
+}
+
+.section#cosy {
+  background-image: url("assets/cosy.jpg");
+  border-bottom: none;
+}
+
+.section .header {
+  color: darkred;
+  font-family: "Spirax", sans-serif;
+  font-size: 5rem;
+}
+
+.section .box {
+  color: whitesmoke;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  width: 500px;
+}
+
+.section .box.red {
+  background-color: rgba(139, 0, 0, 0.8);
+  position: relative;
+  text-align: center;
+}
+
+.section .box.red.first {
+  right: 5rem;
+}
+
+.section .box.red.second {
+  left: 5rem;
+}
+
+.section .box.black {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section .box.black .row {
+  display: flex;
+  justify-content: space-between;
 }
 .container {
     background-color: rgba(0, 0, 0, 0.5); 
@@ -67,30 +110,8 @@ nav ul li a {
     font-family: "Spirax", sans-serif;
 }
 
-.description, .tagline {
-    background-color: rgba(128, 0, 0, 0.8);
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px 0;
-}
-
-.menu {
-    background-color: rgba(0, 0, 0, 0.7); 
-    padding: 20px;
-    margin-top: 20px;
-    width: 50%;
-}
-
-.menu p {
-    margin: 5px 0;
-}
-
   .row {
     display: flex;
     text-align: center;
-    padding: 20px;
-  }
-  .column {
-    flex: 1;
-    margin: 10px;
+    padding: 10px;
   }
